@@ -208,6 +208,7 @@ function printCart(cart) {
                     <td>$${item.price}</td>
                     <td>${item.quantity}</td>
                     <td>$${(item.price * item.quantity).toFixed(2)}</td>
+                    <td><button onclick="removeFromCart(${item.id})" class="btn btn-danger">-</button></td>
                 </tr>
             `;
         });
@@ -221,11 +222,30 @@ function printCart(cart) {
 
 // Exercise 7
 function removeFromCart(id) {
+  // Find the item in the cart using the ID
+  const itemIndex = cart.findIndex(item => item.id === id);
 
+  // Handle cases where the item isn't found:
+  if (itemIndex === -1) {
+    console.warn(`Item with ID ${id} not found in cart.`);
+    return; // Exit the function if item not found
+  }
+
+  // If the item is found:
+  cart[itemIndex].quantity--;
+  if (cart[itemIndex].quantity <= 0) {
+  cart.splice(itemIndex, 1);
+  }
+  printCart(cart)
+  applyPromotionsCart();
+  calculateTotal();
 }
+  
+
+
 
 function open_modal() {
-    printCart();
+    printCart(cart);
 }
 
 
