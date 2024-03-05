@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
-	<title>ShopNow</title>
+	<title>HealthFOOD</title>
 	<!-- Favicon-->
 	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,7 +22,7 @@
 	<!-- Navigation-->
 	<nav class="navbar py-3 py-lg-0 navbar-light bg-light navbar-expand-lg" id="navbar-example2">
 		<div class="container d-flex">
-			<a class="navbar-brand" href="#">ShopNow</a>
+			<a class="navbar-brand text-success" href="#">HealthFOOD</a>
 			<div class="d-flex flex-row order-lg-last align-items-center">
 
 				<button type="button" class="navbar-toggler order-last collapsed" data-bs-toggle="collapse"
@@ -31,11 +31,11 @@
 				</button>
 				<ul class="navbar-nav me-3 me-lg-0 d-flex flex-row align-items-center">
 					<li class="dropdown search-dropdown nav-item py-lg-3">
-						<a href="javascript:void(0)" class="btn btn-outline-dark flex-center" type="button"
+						<a href="javascript:void(0)" class="btn btn-outline-success flex-center" type="button"
 							data-bs-toggle="modal" data-bs-target="#cartModal" onclick="open_modal()"
 							data-bs-auto-close="outside">
 							<i class="fas fa-shopping-cart me-1"></i> Cart <span
-								class="badge bg-dark text-white ms-1 rounded-pill" id="count_product">0</span>
+								class="badge bg-success text-white ms-1 rounded-pill" id="count_product">0</span>
 						</a>
 					</li>
 				</ul>
@@ -45,13 +45,13 @@
 
 				<ul class="navbar-nav me-auto mb-4 mb-lg-0 ms-lg-5">
 					<li class="nav-item">
-						<a class="nav-link" href="#grocery"><i class="fas fa-shopping-basket"></i> Grocery</a>
+						<a class="nav-link text-success" href="#grocery"><i class="fas fa-shopping-basket"></i> Vegano</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#beauty"><i class="fas fa-heart"></i> Beauty</a>
+						<a class="nav-link text-success" href="#beauty"><i class="fas fa-heart"></i> Legumbres</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#clothes"><i class="fas fa-tshirt"></i> Clothes</a>
+						<a class="nav-link text-success" href="#clothes"><i class="fas fa-tshirt"></i> Clothes</a>
 					</li>
 
 				</ul>
@@ -60,61 +60,61 @@
 	</nav>
 
 	<!-- Header-->
-	<header class="bg-dark py-5">
+	<header class="bg-dark py-5" style="background-image: url('./images/supermarket-banner-concept-with-ingredients.webp'); background-size: cover; background-position: center;">
 		<div class="container px-4 px-lg-5 my-5">
-			<div class="text-center text-white">
-				<h1 class="display-4 fw-bolder">IT Academy Shop</h1>
-				<p class="lead fw-normal text-white-50 mb-0">Get up to 50% off Today Only!</p>
+			<div class="text-start text-white">
+				<h1 class="display-4 fw-bolder">Recetas que Enamoran</h1>
+				<p class="lead fw-normal text-white-50 mb-0">¡Solo Hoy: Descuentos de Hasta el 50%! No te lo Pierdas</p>
 			</div>
 		</div>
 	</header>
 	<!-- Section-->
 	<section class="pt-5" id="grocery">
-		<h2 class="text-center"><i class="fas fa-shopping-basket pe-3"></i>Grocery</h2>
+		<h2 class="text-center text-success"><i class="bi bi-tree-fill"></i>Vegano</h2>
 		<div class="container px-4 px-lg-5 mt-5">
 			<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 				<div class="col mb-5">
 					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+						<img class="card-img-top" src="./images/pizza-coliflor.webp" alt="pizza-coliflor" style="height: 17rem;" />
 						<div class="card-body p-4">
 							<div class="text-center">
-								<h5 class="fw-bolder">Cooking Oil</h5>
-								$10.5
+								<h5 class="fw-bolder text-success">Minipizzas de Coliflor </h5>
+								4.99 €
 							</div>
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(1)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-success">Add to cart</button></div>
 						</div>
 					</div>
 				</div>
 				<div class="col mb-5">
 					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+						<img class="card-img-top" src="./images/gratinado-pasta.webp" alt="gratinado-pasta" style="height: 17rem;">
 						<div class="card-body p-4">
 							<div class="text-center">
-								<h5 class="fw-bolder">Pasta</h5>
-								$6.25
+								<h5 class="fw-bolder text-success">Gratinado vegano</h5>
+								6.25 €
 							</div>
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(2)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-success">Add to cart</button></div>
 						</div>
 					</div>
 				</div>
 				<div class="col mb-5">
 					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+						<img class="card-img-top" src="./images/ensalada_brocoli.webp" alt="ensalada-brocoli" style="height: 17rem;"/>
 						<div class="card-body p-4">
 							<div class="text-center">
-								<h5 class="fw-bolder">Instant cupcake mixture</h5>
+								<h5 class="fw-bolder text-success">Ensalada de Brócoli</h5>
 								$5
 							</div>
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(3)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-success">Add to cart</button></div>
 						</div>
 					</div>
 				</div>
@@ -123,51 +123,51 @@
 		</div>
 	</section>
 	<section class="pt-5" id="beauty">
-		<h2 class="text-center"><i class="fas fa-heart pe-3"></i>Beauty</h2>
+		<h2 class="text-center text-success">Legumbres</h2>
 		<div class="container px-4 px-lg-5 mt-5">
 			<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 				<div class="col mb-5">
 					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+						<img class="card-img-top" src="./images/f363eeac-07a8-469c-8213-0dced7e4d3e9.avif" alt="hummus-batata" style="height: 17rem;" />
 						<div class="card-body p-4">
 							<div class="text-center">
-								<h5 class="fw-bolder">All-in-1</h5>
-								$260
+								<h5 class="fw-bolder text-success">Hummus de batata</h5>
+								7.86 €
 							</div>
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(4)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-success">Add to cart</button></div>
 						</div>
 					</div>
 				</div>
 				<div class="col mb-5">
 					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+						<img class="card-img-top" src="./images/A6217BF6-A6B8-422C-97F6-706A3E3BA759.avif" alt="Edammame" style="height: 17rem;"/>
 						<div class="card-body p-4">
 							<div class="text-center">
-								<h5 class="fw-bolder">Zero makeup kit</h5>
-								$20.5
+								<h5 class="fw-bolder text-success">Edammame</h5>
+								4.32 €
 							</div>
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(5)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-success">Add to cart</button></div>
 						</div>
 					</div>
 				</div>
 				<div class="col mb-5">
 					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+						<img class="card-img-top" src="./images/30d852d9-e925-4d79-a962-b4c208d3e0c3.avif" alt="Hambusguesas-Lentejas" style="height: 17rem;"/>
 						<div class="card-body p-4">
 							<div class="text-center">
-								<h5 class="fw-bolder">Lip tints</h5>
-								$12.75
+								<h5 class="fw-bolder text-success">Hambusguesas</h5>
+								9.99 €
 							</div>
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(6)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-success">Add to cart</button></div>
 						</div>
 					</div>
 				</div>
@@ -176,51 +176,51 @@
 		</div>
 	</section>
 	<section class="pt-5" id="clothes">
-		<h2 class="text-center"><i class="fas fa-tshirt pe-3"></i>Clothes</h2>
+		<h2 class="text-center text-success">Pescados</h2>
 		<div class="container px-4 px-lg-5 mt-5">
 			<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 				<div class="col mb-5">
 					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+						<img class="card-img-top" src="./images/zarzuela.avif" alt="zarzuela" style="height: 17rem;"/>
 						<div class="card-body p-4">
 							<div class="text-center">
-								<h5 class="fw-bolder">Lawn dress</h5>
-								$15
+								<h5 class="fw-bolder text-success">Zarzuela de Pescados</h5>
+								15 €
 							</div>
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(7)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-success">Add to cart</button></div>
 						</div>
 					</div>
 				</div>
 				<div class="col mb-5">
 					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+						<img class="card-img-top" src="./images/tablaMarisco.webp" alt="tablaMarisco" style="height: 17rem;"/>
 						<div class="card-body p-4">
 							<div class="text-center">
-								<h5 class="fw-bolder">Lawn-chiffon combo</h5>
-								$19.99
+								<h5 class="fw-bolder text-success">Tabla de Mariscos</h5>
+								19.99 €
 							</div>
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(8)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-success">Add to cart</button></div>
 						</div>
 					</div>
 				</div>
 				<div class="col mb-5">
 					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+						<img class="card-img-top" src="./images/gunkan-maki_salmon.avif" alt="gunkan-maki_salmon" style="height: 17rem;"/>
 						<div class="card-body p-4">
 							<div class="text-center">
-								<h5 class="fw-bolder">Toddler Frock</h5>
-								$9.99
+								<h5 class="fw-bolder text-success">Gunkan Maki Salmon</h5>
+								9.99 €
 							</div>
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(9)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-success">Add to cart</button></div>
 						</div>
 					</div>
 				</div>
@@ -230,7 +230,7 @@
 	</section>
 
 	<!-- Footer-->
-	<footer class="py-3 bg-dark">
+	<footer class="py-3 bg-success">
 		<div class="container">
 			<p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p>
 		</div>
@@ -256,10 +256,10 @@
 						</thead>
 						<tbody id="cart_list">
 							<tr>
-								<th scope="row">Cooking oil</th>
-								<td>$10.5</td>
+								<th scope="row">Minipizzas Coliflor</th>
+								<td>4.99 €</td>
 								<td>`${item.quantity}`</td>
-								<td>$21</td>
+								<td>4.99 €</td>
 								<td><button type="button" onclick="removeItem()" class="btn btn-danger">Remove</button></td>
 							</tr>
 							<tr>

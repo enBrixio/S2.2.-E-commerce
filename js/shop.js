@@ -2,9 +2,9 @@
 let products = [
     {
         id: 1,
-        name: 'cooking oil',
-        price: 10.5,
-        type: 'grocery',
+        name: 'Minipizzas Coliflor',
+        price: 4.99,
+        type: 'vegano',
         offer: {
             number: 3,
             percent: 20
@@ -12,15 +12,15 @@ let products = [
     },
     {
         id: 2,
-        name: 'Pasta',
+        name: 'Gratinado vegano de pasta',
         price: 6.25,
-        type: 'grocery'
+        type: 'vegano'
     },
     {
         id: 3,
-        name: 'Instant cupcake mixture',
+        name: 'Ensalada de Brócoli',
         price: 5,
-        type: 'grocery',
+        type: 'vegano',
         offer: {
             number: 10,
             percent: 30
@@ -28,39 +28,39 @@ let products = [
     },
     {
         id: 4,
-        name: 'All-in-one',
-        price: 260,
-        type: 'beauty'
+        name: 'Hummus Batata',
+        price: 7.86,
+        type: 'Legumbre'
     },
     {
         id: 5,
-        name: 'Zero Make-up Kit',
-        price: 20.5,
-        type: 'beauty'
+        name: 'Edammame',
+        price: 4.32,
+        type: 'Legumbre'
     },
     {
         id: 6,
-        name: 'Lip Tints',
-        price: 12.75,
-        type: 'beauty'
+        name: 'Hamburgues Lentejas',
+        price: 9.99,
+        type: 'Legumbre'
     },
     {
         id: 7,
-        name: 'Lawn Dress',
+        name: 'Zarzuela de Mariscos',
         price: 15,
-        type: 'clothes'
+        type: 'pescados'
     },
     {
         id: 8,
-        name: 'Lawn-Chiffon Combo',
+        name: 'Tabla de Mariscos',
         price: 19.99,
-        type: 'clothes'
+        type: 'pescados'
     },
     {
         id: 9,
-        name: 'Toddler Frock',
+        name: 'Gunkan-Maki de Salmon',
         price: 9.99,
-        type: 'clothes'
+        type: 'pescados'
     }
 ]
 
